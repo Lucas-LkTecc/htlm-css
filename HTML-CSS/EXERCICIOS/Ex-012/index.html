@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <!-- O WIDTH serve para determinar largura do video na sua pagina. esses videos estão dentro do meu site logo causa gasto de banda larga já q os videos pesam assim causa peso no site-->
+    <video width="560" controls autoplay loop >
+        <source src="midia/Meu-Video-web.webm" type="video/webm">
+        <source src="midia/Meu-Video720.mp4" type="video/720p">
+        <source src="midia/meu-video.mpa.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de Vídeos.</p>
+    </video>
+<!-- O youtube e o vineo utilizam a sua banda e não afetam a sua barda larga. -->
+    <h1>Inserindo video do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=s_ig7lg9X8UpgAQx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!--Vineo é uma plataforma semelhante ao youtube também podemos utilizar para pegar video, a qualidade é melhor mais seu codigo não é tão bom entao causa travamento no video se a irternet não for boa.-->
+    <h1>Inserindo vídeos do Vimeo.</h1>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/71127606?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Animation Reel 2022"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    
+</html>
